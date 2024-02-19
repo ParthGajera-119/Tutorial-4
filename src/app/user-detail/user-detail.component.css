@@ -1,0 +1,46 @@
+.user-profile {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .user-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .user-body, .user-extra {
+    padding: 20px;
+  }
+  
+  .user-body p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .user-extra h2 {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .user-extra ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-extra li {
+    margin-bottom: 5px;
+  }
+  

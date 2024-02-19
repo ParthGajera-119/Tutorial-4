@@ -1,0 +1,35 @@
+<div *ngIf="user" class="user-profile">
+    <div class="user-header">
+      <img [src]="user.picture" alt="Profile Picture of {{ user.name }}">
+      <h1>{{ user.name }}</h1>
+      <p>{{ user.greeting }}</p>
+    </div>
+    <div class="user-body">
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Phone:</strong> {{ user.phone }}</p>
+      <p><strong>Company:</strong> {{ user.company }}</p>
+      <p><strong>Address:</strong> {{ user.address }}</p>
+      <p><strong>About:</strong> {{ user.about }}</p>
+      <p><strong>Registered:</strong> {{ user.registered }}</p>
+      <p><strong>Balance:</strong> {{ user.balance }}</p>
+      <p><strong>Age:</strong> {{ user.age }}</p>
+      <p><strong>Eye Color:</strong> {{ user.eyeColor }}</p>
+      <p><strong>Gender:</strong> {{ user.gender }}</p>
+      <p><strong>Favorite Fruit:</strong> {{ user.favoriteFruit }}</p>
+      <p><strong>Active:</strong> {{ user.isActive ? 'Yes' : 'No' }}</p>
+      <p><strong>Latitude:</strong> {{ user.latitude }}</p>
+      <p><strong>Longitude:</strong> {{ user.longitude }}</p>
+      <div>
+        <strong>Tags:</strong>
+        <ul>
+          <li *ngFor="let tag of user.tags">{{ tag }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="user-extra">
+      <h2>Friends</h2>
+      <ul>
+        <li *ngFor="let friend of user.friends">{{ friend.name }}</li>
+      </ul>
+    </div>
+  </div>

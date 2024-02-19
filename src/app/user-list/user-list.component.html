@@ -1,0 +1,12 @@
+<input [(ngModel)]="searchTerm" placeholder="Search users">
+
+<div class="users-container">
+  <div *ngFor="let user of filteredUsers()" class="user-card" (click)="navigateToUser(user._id)">
+    <img [src]="user.picture" alt="{{ user.name }}">
+    <p>{{ user.name }}</p>
+  </div>
+</div>
+
+  
+  
+  <!-- <p>{{ user.firstName }} {{ user.lastName }}</p> -->
